@@ -1,0 +1,38 @@
+Start
+  │
+  ▼
+Load and Prepare Data
+  │
+  ├──> Normalize/Scale Features (optional but helps gradient descent)
+  │
+  ▼
+Initialize Parameters (θ₀ and θ₁)
+  │
+  ▼
+Repeat until convergence or max iterations:
+  │
+  ├──> Predict house prices using current θ
+  │       (hypothesis: h(x) = θ₀ + θ₁x)
+  │
+  ├──> Compute Cost Function (Mean Squared Error)
+  │
+  ├──> Calculate Gradients (∂J/∂θ₀ and ∂J/∂θ₁)
+  │
+  └──> Update Parameters:
+            θ₀ := θ₀ - α * ∂J/∂θ₀  
+            θ₁ := θ₁ - α * ∂J/∂θ₁
+  │
+  ▼
+Check for Convergence
+  │
+  ▼
+Model Trained
+  │
+  ▼
+Make Predictions on New Data
+  │
+  ▼
+Evaluate Performance (e.g., plot predictions vs actual)
+  │
+  ▼
+End
